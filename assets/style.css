@@ -1,10 +1,16 @@
+@font-face {
+    font-family: Emberly;
+    src: url(./font/Emberly-SemiBoldNarrow.otf);
+}
 :root{
     --bg-primary: #F4BC00;
     --bg-secondary: #1B1B1B;
     --bg-ternary: #E0DDD6;
     --bg-ternary-light: #E2E2E2;
     --white: #FFFFFF;
+    font-family: Emberly;
 }
+
 
 body{
     height: 100vh;
