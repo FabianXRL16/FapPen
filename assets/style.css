@@ -121,3 +121,41 @@ body{
     color: var(--bg-primary);
     font-size: 47px;
 }
+
+.slogans{
+    grid-column: 9 / 12;
+    grid-row: 2 / 5;
+    position: relative;
+}
+
+.slogans .slogans__content{
+    background-color: var(--bg-primary);
+    margin-top:10%;
+    height: 90%;
+    margin-left: 13.3%;
+    width: 76%;
+    text-align: right;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.slogans .slogans__content h1{
+    font-size: 65px;
+    margin: 70% 0 0 0;
+}
+
+.slogans .slogans__content h2{
+    margin: 0;
+    font-size: 50px;
+}
+
+.slogans .bar{
+    width: 20px;
+    height: 100px;
+    background-color: var(--white);
+    top: 10%;
+    right: 10.7%;
+    position: absolute;
+    box-shadow: var(--white) -282px 243.5px 0px 0px;
+}
