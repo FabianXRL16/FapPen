@@ -1,0 +1,10 @@
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+}
