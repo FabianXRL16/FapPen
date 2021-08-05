@@ -2,6 +2,11 @@
     font-family: Emberly;
     src: url(./font/Emberly-SemiBoldNarrow.otf);
 }
+
+@font-face {
+    font-family: EmberlyBold;
+    src: url(./font/Emberly-ExtraBoldCondensed.otf);
+}
 :root{
     --bg-primary: #F4BC00;
     --bg-secondary: #1a1a1a;
@@ -46,7 +51,7 @@ body{
     width: 57%;
     margin-bottom: 13.5%;
     margin-left: 12%;
-    box-shadow: var(--bg-primary) 0px 5px 20px;
+    box-shadow: var(--bg-primary) 0px 7px 29px 0px;
 }
 
 .logo{
@@ -141,13 +146,13 @@ body{
 }
 
 .slogans .slogans__content h1{
-    font-size: 65px;
+    font-size: 80px;
     margin: 70% 0 0 0;
 }
 
 .slogans .slogans__content h2{
     margin: 0;
-    font-size: 50px;
+    font-size: 65px;
 }
 
 .slogans .bar{
@@ -158,4 +163,49 @@ body{
     right: 10.7%;
     position: absolute;
     box-shadow: var(--white) -282px 243.5px 0px 0px;
+}
+
+.slogansImg{
+    grid-column: 9 / 13;
+    grid-row: 3 / 7;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    padding-top: 165px;
+}
+
+.slogansImg .slogansImg__content{
+    background-color: var(--bg-ternary-light);
+    background-image: url(./img/secondary-face.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    letter-spacing: 4pt;
+    margin: 40px 0 0 0;
+    box-shadow: var(--bg-secondary) 0px 7px 29px 0px;
+}
+
+.slogansImg .slogansImg__content h1{
+    font-size: 150px;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    font-family: EmberlyBold;
+    color: var(--white);
+    margin: 20px 0 30px 0;
+}
+
+.pen{
+    grid-column: 7 / 10;
+    grid-row: 4 / 7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.pen img{
+    height: 93%;
+    margin-right: 25px;
 }
