@@ -22,7 +22,6 @@ body{
     grid-row: 1 / 7;
     display: grid;
     align-content: end;
-    position: relative;
 }
 
 .mainFace img{
@@ -55,4 +54,18 @@ body{
     position: absolute;
     background-color: var(--bg-primary);
     right: 80px;
+}
+
+.penFace{
+    grid-column: 4 / 7;
+    grid-row: 2 / 6;
+    display: grid;
+    align-content: end;
+}
+
+.penFace img{
+    width: 57%;
+    margin-bottom: 13.5%;
+    margin-left: 12%;
+    box-shadow: var(--bg-primary) 0px 5px 20px;
 }
