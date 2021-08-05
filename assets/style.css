@@ -4,7 +4,7 @@
 }
 :root{
     --bg-primary: #F4BC00;
-    --bg-secondary: #1B1B1B;
+    --bg-secondary: #1a1a1a;
     --bg-ternary: #E0DDD6;
     --bg-ternary-light: #E2E2E2;
     --white: #FFFFFF;
@@ -15,6 +15,7 @@
 body{
     height: 100vh;
     margin: 0;
+    background-color: var(--bg-ternary);
 }
 
 .container{
@@ -74,3 +75,22 @@ body{
     margin-top: 67px;
     margin-left: 50px;
 }
+
+.barContent{
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    display: grid;
+    align-content: center;
+}
+
+.barContent .bar{
+    height: 200px;
+    width: 20px;
+    background-color: var(--bg-primary);
+    box-shadow: var(--bg-secondary) 35px 0px 0px 0px,
+    var(--white) calc(100vw - 20px) 0px 0px 0px,
+    var(--white) calc(50vw - 20px) calc(50vh - 100px) 0px 0px,
+    var(--bg-secondary) calc(50vw - 55px) calc(50vh - 100px) 0px 0px,
+    var(--bg-primary) calc(50vw - 90px) calc(50vh - 100px) 0px 0px;
+}
+
