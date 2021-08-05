@@ -1,3 +1,11 @@
+:root{
+    --bg-primary: #F4BC00;
+    --bg-secondary: #1B1B1B;
+    --bg-ternary: #E0DDD6;
+    --bg-ternary-light: #E2E2E2;
+    --white: #FFFFFF;
+}
+
 body{
     height: 100vh;
     margin: 0;
@@ -7,4 +15,44 @@ body{
     height: 100vh;
     display: grid;
     grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+}
+
+.mainFace{
+    grid-column: 2 / 7;
+    grid-row: 1 / 7;
+    display: grid;
+    align-content: end;
+    position: relative;
+}
+
+.mainFace img{
+    width: 80.75%;
+    margin-left: 6%;
+}
+
+.mainFace .bar{
+    width: 27px;
+    height: 278px;
+    background-color: var(--bg-primary);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.mainFace .bar::before{
+    content: "";
+    width: 27px;
+    height: 278px;
+    position: absolute;
+    background-color: var(--bg-secondary);
+    right: 39px;
+}
+
+.mainFace .bar::after{
+    content: "";
+    width: 27px;
+    height: 278px;
+    position: absolute;
+    background-color: var(--bg-primary);
+    right: 80px;
 }
