@@ -11,7 +11,6 @@
     font-family: Emberly;
 }
 
-
 body{
     height: 100vh;
     margin: 0;
@@ -59,12 +58,10 @@ body{
 
 .logo .primary{
     font-size: 200px;
-    margin: 0;
 }
 
 .logo .primary .secondary{
     font-size: 130px;
-    margin: 0;
     color: var(--white);
 }
 
@@ -94,3 +91,33 @@ body{
     var(--bg-primary) calc(50vw - 90px) calc(50vh - 100px) 0px 0px;
 }
 
+.description{
+    grid-column: 7 / 10;
+    grid-row: 2 / 5;
+}
+
+.description .description__content{
+    margin-top:10%;
+    height: 90%;
+    width: 80%;
+    background-color: #1a1a1a;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.description .description__content h1{
+    font-size: 120px;
+    color: var(--white);
+}
+
+.text{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.description .description__content h2{
+    color: var(--bg-primary);
+    font-size: 47px;
+}
