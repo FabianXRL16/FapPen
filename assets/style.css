@@ -29,33 +29,6 @@ body{
     margin-left: 6%;
 }
 
-.mainFace .bar{
-    width: 27px;
-    height: 278px;
-    background-color: var(--bg-primary);
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.mainFace .bar::before{
-    content: "";
-    width: 27px;
-    height: 278px;
-    position: absolute;
-    background-color: var(--bg-secondary);
-    right: 39px;
-}
-
-.mainFace .bar::after{
-    content: "";
-    width: 27px;
-    height: 278px;
-    position: absolute;
-    background-color: var(--bg-primary);
-    right: 80px;
-}
-
 .penFace{
     grid-column: 4 / 7;
     grid-row: 2 / 6;
