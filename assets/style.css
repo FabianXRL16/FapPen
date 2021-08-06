@@ -78,14 +78,14 @@ body{
     margin-left: 50px;
 }
 
-.barContent{
+.barY{
     grid-column: 1 / 2;
     grid-row: 3 / 5;
     display: grid;
     align-content: center;
 }
 
-.barContent .bar{
+.barY .bar{
     height: 200px;
     width: 20px;
     background-color: var(--bg-primary);
@@ -96,6 +96,25 @@ body{
     var(--bg-primary) calc(50vw - 90px) calc(50vh - 100px) 0px 0px;
 }
 
+.barX{
+    grid-column: 3 / 7;
+    grid-row: 2 / 3;
+    padding-top: 22px;
+    display: grid;
+    justify-content: end;
+}
+
+.barX .bar{
+    width: 200px;
+    height: 20px;
+    background-color: var(--bg-secondary);
+    box-shadow: var(--white) -140px 0px 0px 0px,
+    var(--bg-primary) -280px 0px 0px 0px,
+    var(--bg-primary) -420px 0px 0px 0px,
+    var(--white) -120px 0px 0px 0px,
+    var(--bg-secondary) calc(50vh + 210px) calc(100vh - 170px) 0px 0px;
+}
+
 .description{
     grid-column: 7 / 10;
     grid-row: 2 / 5;
@@ -103,8 +122,9 @@ body{
 
 .description .description__content{
     margin-top:10%;
+    margin-left: 10%;
     height: 90%;
-    width: 80%;
+    width: 70%;
     background-color: #1a1a1a;
     display: grid;
     justify-content: center;
