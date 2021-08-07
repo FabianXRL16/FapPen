@@ -28,6 +28,28 @@ body{
     grid-template: repeat(6, 1fr) / repeat(12, 1fr);
 }
 
+.background {
+    grid-column: 7 / 13;
+    grid-row: 1 / 7;
+    padding-left: 13%;
+    display: flex;
+}
+
+.triangle{
+    width: 0px;
+    height: 0px;
+    border-left: 37vh solid transparent;
+    border-top: 50vh solid var(--bg-secondary);
+    border-right: 37vh solid var(--bg-secondary);
+    border-bottom: 50vh solid transparent;
+}
+
+.rectangle{
+    width: 13vw;
+    height: 100vh;
+    background-color: var(--bg-secondary);
+}
+
 .nav{
     grid-column: 3 / 11;
     grid-row: 1 / 2;
